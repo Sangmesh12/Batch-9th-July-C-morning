@@ -28,11 +28,14 @@ public class NeoStoxBase
 	}
 	public  void screenshotgenral(String name) throws IOException
 	{
+		
 		 File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
 		 
 		 File destination = new File("C:\\Users\\User\\Desktop\\SOFTWARE TESTING\\AUTOMATION\\SELENIUM\\screensshots\\"+name+".jpeg");
 		 
 FileHandler.copy(src, destination);
+		
 		 
 	}
 	
