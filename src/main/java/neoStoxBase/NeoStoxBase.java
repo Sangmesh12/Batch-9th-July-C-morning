@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.Reporter;
 
 import neoStoxUtility.NeoStoxUtility;
 
@@ -22,6 +23,7 @@ public class NeoStoxBase
 	     driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 	    driver.get(NeoStoxUtility.readpropertyfile("url"));
+	    Reporter.log("using git branch one", true);
 		
 	}
 	public  void screenshotgenral(String name) throws IOException
